@@ -1,0 +1,11 @@
+<repositories encoding="unicode" version="1.1">
+  <repo priority="50" quality="experimental">
+    <name>greatspn-overlay</name>
+    <description>Gentoo Repository for the GreatSPN framework.</description>
+    <owner>
+      <email>me@fragal.eu</email>
+      <name>GallaFrancesco</name>
+    </owner>
+    <source type="git">https://github.com/gallafrancesco/greatspn-overlay.git</source>
+  </repo>
+</repositories>
