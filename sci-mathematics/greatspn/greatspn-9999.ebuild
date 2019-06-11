@@ -15,18 +15,18 @@ TAGS="${PV}"
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS=""
-IUSE="static"
+IUSE="static-libs"
 
 RDEPEND="
-		dev-libs/gmp[static? (static-libs(+))]
-		dev-libs/boost[static? (static-libs(+))]
+		dev-libs/gmp[static-libs?]
+		dev-libs/boost[static-libs?]
 		dev-java/openjdk-bin
-		dev-python/graphviz[static? (static-libs(+))]
+		dev-python/graphviz[static-libs?]
 		dev-cpp/libxmlpp:2.6
 		dev-cpp/glibmm
-		dev-libs/glib[static? (static-libs(+))]
-		sci-mathematics/glpk[static? (static-libs(+))]
-		sci-mathematics/lpsolve[static? (static-libs(+))]
+		dev-libs/glib[static-libs?]
+		sci-mathematics/glpk[static-libs?]
+		sci-mathematics/lpsolve[static-libs?]
 		sys-libs/meddly
 		x11-misc/xdg-utils
 		"
