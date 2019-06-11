@@ -21,7 +21,7 @@ RDEPEND="
 		dev-libs/gmp[static-libs?]
 		dev-libs/boost[static-libs?]
 		dev-java/openjdk-bin
-		dev-python/graphviz[static-libs?]
+		media-gfx/graphviz[static-libs?]
 		dev-cpp/libxmlpp:2.6
 		dev-cpp/glibmm
 		dev-libs/glib[static-libs?]
