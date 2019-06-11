@@ -56,7 +56,7 @@ user$ export PATH=$PATH:/usr/local/GreatSPN/bin:/usr/local/GreatSPN/scripts
 user$ greatspn_editor
 ```
 
-Remember to add `/usr/local/GreatSPN/bin` and `/usr/local/GreatSPN/scripts` to your
+Remember to add `/usr/local/GreatSPN/bin` and `/usr/local/GreatSPN/scripts` to your `$PATH` in your
 `$HOME/.bashrc` to make this change persistent.
 
 ### 4. Updating GreatSPN
