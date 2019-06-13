@@ -22,6 +22,7 @@ BDEPEND="
 	sys-devel/libtool
 	sys-devel/autoconf
 	sys-devel/automake
+	sys-devel/gcc
 	"
 DEPEND="${BDEPEND}"
 

@@ -31,6 +31,7 @@ RDEPEND="
 		x11-misc/xdg-utils
 		"
 BDEPEND="
+	app-arch/zip
 	dev-vcs/git
 	sys-devel/libtool
 	sys-devel/autoconf
