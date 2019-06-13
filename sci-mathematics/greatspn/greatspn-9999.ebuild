@@ -43,7 +43,7 @@ BDEPEND="
 DEPEND="${BDEPEND} ${RDEPEND}"
 
 src_unpack() {
-	git-r3_fetch ${EGIT_REPO_URI} ${REFS} ${TAGS}
+	git-r3_fetch ${EGIT_REPO_URI} ${REFS}
 	git-r3_checkout ${EGIT_REPO_URI} ${WORKDIR}/${P} ${TAG}
 }
 
