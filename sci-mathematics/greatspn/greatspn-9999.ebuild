@@ -8,7 +8,7 @@ inherit git-r3
 MAKEOPTS="-j1"
 DESCRIPTION="Modeling, validation and performance evaluation of distributed systems."
 HOMEPAGE="http://www.di.unito.it/~greatspn/index.html"
-EGIT_REPO_URI="https://github.com/gallafrancesco/sources"
+EGIT_REPO_URI="https://github.com/greatspn/sources"
 REFS="refs/tags/master"
 TAGS="${PV}"
 
