@@ -18,6 +18,7 @@ KEYWORDS=""
 IUSE="static-libs"
 
 RDEPEND="
+		sci-libs/colamd[static-libs?]
 		dev-libs/gmp[static-libs?]
 		dev-libs/boost[static-libs?]
 		dev-java/openjdk-bin
@@ -53,7 +54,11 @@ src_prepare() {
 
 src_compile() {
 	if [ -f Makefile ] || [ -f GNUmakefile ] || [ -f makefile ]; then
-		emake || die "emake failed"
+		if use static-libs ; then
+			emake STATIC_LINK=1 || die "emake failed for static build"
+		else
+			emake || die "emake failed"
+		fi
 	fi
 }
 
