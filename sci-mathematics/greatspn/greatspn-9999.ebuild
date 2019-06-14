@@ -8,8 +8,8 @@ inherit git-r3
 MAKEOPTS="-j1"
 DESCRIPTION="Modeling, validation and performance evaluation of distributed systems."
 HOMEPAGE="http://www.di.unito.it/~greatspn/index.html"
-EGIT_REPO_URI="https://github.com/greatspn/sources"
-REFS="refs/tags/scons"
+EGIT_REPO_URI="https://github.com/gallafrancesco/sources"
+REFS="refs/tags/master"
 TAGS="${PV}"
 
 LICENSE="GPL-2"
@@ -43,7 +43,7 @@ BDEPEND="
 DEPEND="${BDEPEND} ${RDEPEND}"
 
 src_unpack() {
-	git-r3_fetch ${EGIT_REPO_URI} ${REFS}
+	git-r3_fetch ${EGIT_REPO_URI}
 	git-r3_checkout ${EGIT_REPO_URI} ${WORKDIR}/${P} ${TAG}
 }
 
