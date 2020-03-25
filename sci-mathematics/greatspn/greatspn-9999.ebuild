@@ -9,7 +9,7 @@ MAKEOPTS="-j1"
 DESCRIPTION="Modeling, validation and performance evaluation of distributed systems."
 HOMEPAGE="http://www.di.unito.it/~greatspn/index.html"
 EGIT_REPO_URI="https://github.com/greatspn/sources"
-REFS="refs/tags/scons"
+REFS="refs/tags/master"
 TAGS="${PV}"
 
 LICENSE="GPL-2"
@@ -18,6 +18,7 @@ KEYWORDS=""
 IUSE="static-libs"
 
 RDEPEND="
+		sci-libs/colamd[static-libs?]
 		dev-libs/gmp[cxx,static-libs?]
 		dev-libs/boost[static-libs?]
 		dev-java/openjdk-bin
@@ -43,7 +44,7 @@ BDEPEND="
 DEPEND="${BDEPEND} ${RDEPEND}"
 
 src_unpack() {
-	git-r3_fetch ${EGIT_REPO_URI} ${REFS}
+	git-r3_fetch ${EGIT_REPO_URI}
 	git-r3_checkout ${EGIT_REPO_URI} ${WORKDIR}/${P} ${TAG}
 }
 
@@ -53,7 +54,11 @@ src_prepare() {
 
 src_compile() {
 	if [ -f Makefile ] || [ -f GNUmakefile ] || [ -f makefile ]; then
-		emake || die "emake failed"
+		if use static-libs ; then
+			emake STATIC_LINK=1 || die "emake failed for static build"
+		else
+			emake || die "emake failed"
+		fi
 	fi
 }
 
