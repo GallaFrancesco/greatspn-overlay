@@ -18,7 +18,7 @@ KEYWORDS=""
 IUSE="static-libs"
 
 RDEPEND="
-		dev-libs/gmp[static-libs?]
+		dev-libs/gmp[cxx,static-libs?]
 		dev-libs/boost[static-libs?]
 		dev-java/openjdk-bin
 		media-gfx/graphviz[static-libs?]
