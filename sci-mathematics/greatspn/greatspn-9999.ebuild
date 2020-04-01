@@ -37,7 +37,7 @@ BDEPEND="
 	sys-devel/libtool
 	sys-devel/autoconf
 	sys-devel/automake
-	=sys-devel/flex-2.6.1
+	sys-devel/flex
 	dev-util/byacc
 	dev-java/ant-antlr
 	"
