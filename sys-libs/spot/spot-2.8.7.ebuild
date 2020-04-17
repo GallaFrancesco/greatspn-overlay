@@ -9,7 +9,7 @@ SRC_URI="http://www.lrde.epita.fr/dload/spot/spot-2.8.7.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="~*"
 IUSE="python"
 
 RDEPEND="
