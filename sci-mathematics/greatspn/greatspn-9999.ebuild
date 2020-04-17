@@ -20,7 +20,7 @@ IUSE="static-libs"
 RDEPEND="
 		sci-libs/colamd[static-libs?]
 		dev-libs/gmp[cxx,static-libs?]
-		dev-libs/boost[static-libs?]
+		dev-libs/boost[context,static-libs?]
 		dev-java/openjdk-bin
 		media-gfx/graphviz[static-libs?]
 		dev-cpp/libxmlpp:2.6
