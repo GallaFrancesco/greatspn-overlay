@@ -7,6 +7,7 @@ Available packages:
 
 * [asminer/meddly](https://github.com/asminer/meddly.git)
 * [GreatSPN/SOURCES](https://github.com/greatspn/sources.git)
+* [Spot](https://spot.lrde.epita.fr/)
 
 The packages have the version string `9999` appended since they are fetched from
 the `master` branch of their repositories, to respect Portage's naming
