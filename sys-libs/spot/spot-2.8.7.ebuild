@@ -3,13 +3,9 @@
 
 EAPI=7
 
-inherit git-r3
-
 DESCRIPTION="A platform for LTL and ω-automata manipulation."
 HOMEPAGE="https://spot.lrde.epita.fr/"
-EGIT_REPO_URI="https://gitlab.lrde.epita.fr/spot/spot.git"
-REFS="refs/heads/master"
-TAGS="${PV}"
+SRC_URI="http://www.lrde.epita.fr/dload/spot/spot-2.8.7.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="0"
@@ -28,21 +24,11 @@ BDEPEND="
 	"
 DEPEND="${BDEPEND} ${RDEPEND}"
 
-src_unpack() {
-	git-r3_fetch ${EGIT_REPO_URI} ${REFS}
-	git-r3_checkout ${EGIT_REPO_URI} ${WORKDIR}/${P} ${TAG}
-}
-
-src_prepare() {
-	default
-}
-
 src_configure() {
-    autoreconf -fi
     if use python; then
-        econf --prefix=/usr/local/ --disable-devel
+        econf --prefix=/usr/local/
     else
-        econf --prefix=/usr/local/ --disable-python --disable-devel
+        econf --prefix=/usr/local/ --disable-python
     fi
 }
 
