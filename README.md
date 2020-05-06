@@ -5,12 +5,12 @@ repositories, all credits go to the software creators.
 
 Available packages:
 
-* [Spot-2.8.7](https://spot.lrde.epita.fr/)
+* [Spot 2](https://spot.lrde.epita.fr/)
 * [asminer/meddly](https://github.com/asminer/meddly.git)
 * [GreatSPN/SOURCES](https://github.com/greatspn/sources.git)
 
 All three packages are free and open source software. At the moment,
-only Spot version 2.8.7 is provided, while the other two packages are
+only Spot versions 2.8.7+ (upwards) are provided, while the other two packages are
 directly fetched from the `master` branch of their git repository and
 have the version string `9999`, to respect Portage's naming
 conventions.
