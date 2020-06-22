@@ -15,7 +15,7 @@ TAGS="${PV}"
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS=""
-IUSE="static-libs"
+IUSE="static-libs ctlstar"
 
 RDEPEND="
 		sci-libs/colamd[static-libs?]
@@ -29,6 +29,7 @@ RDEPEND="
 		sci-mathematics/glpk[static-libs?]
 		sci-mathematics/lpsolve[static-libs?]
 		sys-libs/meddly
+        ctlstar? ( sys-libs/spot )
 		x11-misc/xdg-utils
 		"
 BDEPEND="
