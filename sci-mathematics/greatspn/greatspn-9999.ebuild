@@ -18,7 +18,7 @@ KEYWORDS=""
 IUSE="static-libs ctlstar"
 
 RDEPEND="
-		sci-libs/colamd[static-libs?]
+		sci-libs/colamd
 		dev-libs/gmp[cxx,static-libs?]
 		dev-libs/boost[context,static-libs?]
 		dev-java/openjdk-bin
@@ -26,7 +26,7 @@ RDEPEND="
 		dev-cpp/libxmlpp:2.6
 		dev-cpp/glibmm
 		dev-libs/glib[static-libs?]
-		sci-mathematics/glpk[static-libs?]
+		sci-mathematics/glpk
 		sci-mathematics/lpsolve[static-libs?]
 		sys-libs/meddly
         ctlstar? ( sys-libs/spot )
